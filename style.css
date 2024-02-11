@@ -403,24 +403,224 @@ button:active, button:hover {
 }
 .brand_wrapper {
 	display: flex;
+	margin-top: 102px;
+	justify-content: center;
+	align-items: self-start;
 }
 .brand_wrapper-left {
 	width: 323px;
+	margin-bottom: 102px;
 }
-.brand_wrapper-right {
+.brand_wrapper-right .row {
 	width: 730px;
 	margin-left: 62px;
-	display: flex;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns:repeat(4, 1fr);
 	
 	
 }
-/* .brand_wrapper-right .row{
-	display: flex;
-	
-} */
+.brand_wrapper-right{
+	margin-left: 30px;
+}
 
 .brand-item {
 	width: 160px;
 	height: 90px;
-	margin-left: 30px;
+	margin: 0 auto;
+}
+/* advertise */
+
+.advertise {
+
+}
+.advertise h5 {
+	width: 601px;
+	color: var(--Neutral-100, #1D1E25);
+	font-size: 56px;
+	font-weight: 600;
+	line-height: 120%; /* 67.2px */
+	letter-spacing: -2px;
+	margin-bottom: 24px;
+	display: inline-block;
+}
+.advertise p {
+	width: 432px;
+	color: var(--Neutral-60, #7E8492);
+	line-height: 32px; /* 177.778% */
+	margin-bottom: 80px;
+
+}
+.advertise-text {
+	margin-left: 60px;
+}
+.advertise-text h5 {
+	max-width: 268px;
+	color: var(--Neutral-100, #1D1E25);
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 42px; /* 131.25% */
+	letter-spacing: -1px;
+	margin-bottom: 24px;
+}
+.advertise-text p {
+	width: 268px;
+	color: var(--Neutral-60, #7E8492);
+	line-height: 26px; /* 162.5% */
+}
+
+.advertise-item {
+	display: flex;
+	position: relative;
+}
+.advertise-item img {
+	width: 240px;
+	height: 270px;
+}
+.advertise_wrapper {
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-columns: repeat(2, 1fr);
+	margin-bottom: 160px;
+}
+/* news-text */
+
+.news-text {
+	text-align: center;
+}
+.news-text h2 {
+	color: var(--Neutral-100, #1D1E25);
+	font-size: 56px;
+	font-weight: 600;
+	line-height: 120%; /* 67.2px */
+	letter-spacing: -2px;
+	margin-bottom: 24px;
+}
+.news-text p {
+	color: var(--Neutral-60, #7E8492);
+	line-height: 32px; /* 177.778% */
+	margin-bottom: 80px;
+}
+.news_ptext {
+	width: 582px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 16px;
+}
+.news_ptext p {
+	color: var(--Neutral-60, #7E8492);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 150%; /* 21px */
+}
+.news_ptext h5 {
+	color: var(--Neutral-100, #1D1E25);
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 150%; /* 48px */
+	letter-spacing: -0.64px;
+}
+.news_wrapper-item img {
+	width: 582px;
+	margin-bottom: 16px;
+}
+.news_wrapper{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 160px;
+}
+.news_wrapper-item:last-child {
+	margin-left: 32px;
+}
+.svg-news {
+	position: absolute;
+	cursor: pointer;
+	margin-top: 120px;
+	width: 80px;
+	height: 80px;
+	flex-shrink: 0;
+	background-color:  var(--Neutral-10, #FFF);
+	border-radius: 100%;
+	text-align: center;
+	padding-top: 18px;
+}
+/* commit commit */
+.text-commit {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 48px;
+
+}
+.text-commit h5 {
+	color: var(--Neutral-100, #101010);
+	width: 530px;
+	font-size: 56px;
+	font-weight: 600;
+	line-height: 120%; /* 67.2px */
+	letter-spacing: -2px;
+	margin-bottom: 105px;
+}
+.text-commit p {
+	color: var(--Neutral-60, #7E8492);
+	width: 376px;
+	line-height: 32px; /* 177.778% */
+}
+.stars {
+	display: flex;
+	align-items: center;
+}
+.stars div{
+	margin-left: 8px;
+}
+.stars  {
+	position: relative;
+	margin-bottom: 19px;
+
+}
+.commit_wrapper {
+	margin-left: 157px;
+}
+.commit_wrapper p{
+	width: 898px;
+	color: var(--Neutral-100, #1D1E25);
+	font-size: 40px;
+	line-height: 130%; /* 52px */
+	letter-spacing: -1px;
+	margin-bottom: 40px;
+}
+.commit_img-inner, .arrow  {
+	display: flex;
+	align-items: center;
+}
+.text-wrapper {
+	margin-left: 24px;
+}
+.text-wrapper h5 {
+	color: var(--Neutral-100, #1D1E25);
+	font-weight: 600;
+	line-height: 26px; /* 144.444% */
+}
+.arrow div {
+	width: 50px;
+	height: 50px;
+	padding: 16px;
+	gap: 8px;
+	border-radius: 100%;
+	border: 1px solid var(--Neutral-40, #CED1D8);
+	background: var(--Neutral-10, #FFF);
+}
+.arrow div:last-child {
+	
+	background: var(--Neutral-100, #1D1E25);
+}
+.commit_img {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 160px;
+	margin-left: 157px;
+}
+.com{
+	position: absolute;
+	left: -161px;
 }
